@@ -13,7 +13,7 @@ angular.module('clientApp')
 	console.log('DancesController loaded...');
 
 	$scope.getDances = function(){
-		$http.get('http://localhost:4741/dances').then(function(response){
+		$http.get('http://localhost:3000/dances').then(function(response){
 			$scope.dances = response.data;
       console.log(response.data);
 		});
